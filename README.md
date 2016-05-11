@@ -19,5 +19,8 @@ Example:
 ./build.sh titan
 ```
 
+### repo sync
 [![Build Status](http://blazingphoenix.in:8484/buildStatus/icon?job=AOSP-RRO-Sync&build=2)](http://blazingphoenix.in:8484/job/AOSP-RRO-Sync/2/)
+
+### rom build
 [![Build Status](http://blazingphoenix.in:8484/buildStatus/icon?job=AOSP-RRO)](http://blazingphoenix.in:8484/job/AOSP-RRO/)
