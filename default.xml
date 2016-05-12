@@ -71,7 +71,7 @@
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="rro" />
   <project name="platform_system_bt" path="system/bt" remote="rro" />
   <project name="platform_system_core" path="system/core" groups="pdk" remote="rro" />
-  <project name="platform_system_extras" path="system/extras"  groups="pdk"remote="rro" />
+  <project name="platform_system_extras" path="system/extras"  groups="pdk" remote="rro" />
   <project name="platform_system_keymaster" path="system/keymaster" remote="rro" />
   <project name="platform_system_security" path="system/security" remote="rro" />
   <project name="platform_system_vold" path="system/vold" groups="pdk" remote="rro" />
