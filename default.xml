@@ -30,6 +30,10 @@
            fetch="https://github.com/AOSP-RRO"
            revision="oms-wew" />
 
+  <remote  name="lol"
+           fetch="https://github.com/Warmachine28"
+           revision="oms"
+
  
 <!-- AOSP-RRO -->
 
@@ -86,7 +90,7 @@
   <project name="platform_system_security" path="system/security" remote="rro" />
   <project name="platform_system_vold" path="system/vold" groups="pdk" remote="rro" />
   <project name="platform_vendor_aosp" path="vendor/aosp" remote="rro" />
-  <project name="manifest" path="manifest" remote="oms" />
+  <project name="manifest" path="manifest" remote="lol" />
   
 <!-- CyanogenMod -->
   <project name="CyanogenMod/android_bionic" path="bionic" groups="pdk" remote="github" revision="cm-13.0" />
