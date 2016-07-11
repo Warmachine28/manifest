@@ -22,20 +22,28 @@
            sync-f="true"
            sync-q="true" />
 
+  <remote  name="oms"
+           fetch="https://github.com/AOSP-RRO"
+           revision="oms" />
+
+  <remote  name="oms-wew"
+           fetch="https://github.com/AOSP-RRO"
+           revision="oms-wew"
+
  
 <!-- AOSP-RRO -->
 
   <project name="platform_art" path="art" groups="pdk" remote="rro" />
-  <project name="platform_build" path="build" groups="pdk,tradefed" remote="rro" >
+  <project name="platform_build" path="build" groups="pdk,tradefed" remote="oms" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="build.sh" dest="build.sh" />
   </project>
   <project name="platform_bootable_recovery" path="bootable/recovery" remote="rro" />
-  <project name="platform_external_sepolicy" path="external/sepolicy" groups="pdk" remote="rro" />
+  <project name="platform_external_sepolicy" path="external/sepolicy" groups="pdk" remote="oms" />
   <project name="platform_external_dhcpcd" path="external/dhcpcd" remote="rro" />
-  <project name="platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="rro" />
+  <project name="platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="oms-wew" />
   <project name="platform_frameworks_av" path="frameworks/av" groups="pdk" remote="rro" />
-  <project name="platform_frameworks_native" path="frameworks/native" groups="pdk" remote="rro" />
+  <project name="platform_frameworks_native" path="frameworks/native" groups="pdk" remote="oms" />
   <project name="platform_frameworks_opt_net_ims" path="frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="rro" />
   <project name="platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="rro" groups="pdk" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" groups="pdk" remote="rro" />
@@ -58,7 +66,7 @@
   <project name="platform_packages_apps_Nfc" path="packages/apps/Nfc" remote="rro" />
   <project name="platform_packages_apps_OTA" path="packages/apps/OTA" remote="rro" />
   <project name="platform_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="rro" />
-  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="rro" />
+  <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="oms" />
   <project name="platform_packages_apps_Snap" path="packages/apps/Snap" groups="pdk" remote="rro" />
   <project name="platform_packages_apps_Stk" path="packages/apps/Stk" remote="rro" />
   <project name="platform_packages_apps_Terminal" path="packages/apps/Terminal" remote="rro" />
@@ -78,7 +86,7 @@
   <project name="platform_system_security" path="system/security" remote="rro" />
   <project name="platform_system_vold" path="system/vold" groups="pdk" remote="rro" />
   <project name="platform_vendor_aosp" path="vendor/aosp" remote="rro" />
-  <project name="manifest" path="manifest" remote="rro" />
+  <project name="manifest" path="manifest" remote="oms" />
   
 <!-- CyanogenMod -->
   <project name="CyanogenMod/android_bionic" path="bionic" groups="pdk" remote="github" revision="cm-13.0" />
