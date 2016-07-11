@@ -32,7 +32,7 @@
 
   <remote  name="lol"
            fetch="https://github.com/Warmachine28"
-           revision="oms"
+           revision="oms" />
 
  
 <!-- AOSP-RRO -->
