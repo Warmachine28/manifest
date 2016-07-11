@@ -28,7 +28,7 @@
 
   <remote  name="oms-wew"
            fetch="https://github.com/AOSP-RRO"
-           revision="oms-wew"
+           revision="oms-wew" />
 
  
 <!-- AOSP-RRO -->
